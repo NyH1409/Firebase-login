@@ -1,9 +1,6 @@
-
-
 * {
 	font-family: 'Roboto';
 	font-weight: 400;
-	color: black;
     font-size: 12px;
 }
 
@@ -14,12 +11,26 @@
     border-radius: 6px;
     box-shadow: 0 0 4px 0 black;
     background-color: #f8f9fa;
+    animation: animatezoom 1s linear ;
 }
 
 .fa-google {
 	background: -webkit-gradient(linear, left top, left bottom, from(#f00), to(#333));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+form{
+    animation: animatezoom 1s linear ;
+}
+
+@keyframes animatezoom{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
 }
 
 .content-right form{
